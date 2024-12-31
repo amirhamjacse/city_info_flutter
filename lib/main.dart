@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'website_page.dart';
 
 void main() {
   runApp(InformationCity());
@@ -76,7 +77,7 @@ class HomePage extends StatelessWidget {
     {'title': 'ফায়ার সার্ভিস', 'icon': Icons.fire_truck, 'page': FireServicePage()},
     {'title': 'কুরিয়ার সার্ভিস', 'icon': Icons.local_shipping, 'page': CourierPage()},
     {'title': 'থানা-পুলিশ', 'icon': Icons.security, 'page': PolicePage()},
-    {'title': 'ওয়েবসাইট', 'icon': Icons.web, 'page': WebsitePage()},
+    {'title': 'ওয়েবসাইট', 'icon': Icons.web, 'page': WebsitePages()},
     {'title': 'বিদ্যুৎ অফিস', 'icon': Icons.electric_bolt, 'page': ElectricityPage()},
     {'title': 'ডায়াগনস্টিক', 'icon': Icons.science, 'page': DiagnosticPage()},
     {'title': 'রক্ত', 'icon': Icons.bloodtype, 'page': BloodPage()},
@@ -241,15 +242,15 @@ class PolicePage extends StatelessWidget {
   }
 }
 
-class WebsitePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('ওয়েবসাইট')),
-      body: Center(child: Text('Website Page')),
-    );
-  }
-}
+// class WebsitePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('ওয়েবসাইট')),
+//       body: Center(child: Text('Website Page')),
+//     );
+//   }
+// }
 
 class ElectricityPage extends StatelessWidget {
   @override
