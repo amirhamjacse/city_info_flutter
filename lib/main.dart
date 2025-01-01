@@ -6,6 +6,16 @@ import 'shoping_page.dart';
 import 'courier_page.dart';
 import 'fireserivce_page.dart';
 import 'police_page.dart';
+import 'blood_page.dart';
+import 'diagnostic_page.dart';
+import 'notification_settings.dart';
+import 'profile_page.dart';
+import 'website_page.dart';
+import 'contact_info.dart';
+import 'electricity_page.dart';
+import 'hotel_page.dart';
+import 'carrent_page.dart';
+import 'bus_fare_page.dart';
 
 
 void main() {
@@ -35,8 +45,8 @@ class _MainNavigationState extends State<MainNavigation> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
     HomePage(),
-    ContactPage(),
-    NotificationPage(),
+    ContactInfoPage(),
+    NotificationSettingsPage(),
     ProfilePage(),
   ];
 
@@ -89,7 +99,7 @@ class HomePage extends StatelessWidget {
     {'title': 'ডায়াগনস্টিক', 'icon': Icons.science, 'page': DiagnosticPage()},
     {'title': 'রক্ত', 'icon': Icons.bloodtype, 'page': BloodPage()},
     {'title': 'হোটেল', 'icon': Icons.hotel, 'page': HotelPage()},
-    {'title': 'গাড়ি ভাড়া', 'icon': Icons.car_rental, 'page': CarRentPage()},
+    {'title': 'গাড়ি ভাড়া', 'icon': Icons.car_rental, 'page': BusFarePage()},
   ];
 
   @override
@@ -159,35 +169,35 @@ class HomePage extends StatelessWidget {
 }
 
 // Define other pages
-class ContactPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('যোগাযোগ')),
-      body: Center(child: Text('Contact Page')),
-    );
-  }
-}
-
-class NotificationPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('নোটিফিকেশন')),
-      body: Center(child: Text('Notification Page')),
-    );
-  }
-}
-
-class ProfilePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('প্রোফাইল')),
-      body: Center(child: Text('Profile Page')),
-    );
-  }
-}
+// class ContactPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('যোগাযোগ')),
+//       body: Center(child: Text('Contact Page')),
+//     );
+//   }
+// }
+//
+// class NotificationPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('নোটিফিকেশন')),
+//       body: Center(child: Text('Notification Page')),
+//     );
+//   }
+// }
+//
+// class ProfilePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('প্রোফাইল')),
+//       body: Center(child: Text('Profile Page')),
+//     );
+//   }
+// }
 
 
 // class HospitalPage extends StatelessWidget {
@@ -250,52 +260,52 @@ class ProfilePage extends StatelessWidget {
 //   }
 // }
 
-class ElectricityPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('বিদ্যুৎ অফিস')),
-      body: Center(child: Text('Electricity Page')),
-    );
-  }
-}
-
-class DiagnosticPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('ডায়াগনস্টিক')),
-      body: Center(child: Text('Diagnostic Page')),
-    );
-  }
-}
-
-class BloodPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('রক্ত')),
-      body: Center(child: Text('Blood Page')),
-    );
-  }
-}
-
-class HotelPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('হোটেল')),
-      body: Center(child: Text('Hotel Page')),
-    );
-  }
-}
-
-class CarRentPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('গাড়ি ভাড়া')),
-      body: Center(child: Text('Car Rent Page')),
-    );
-  }
-}
+// class ElectricityPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('বিদ্যুৎ অফিস')),
+//       body: Center(child: Text('Electricity Page')),
+//     );
+//   }
+// }
+//
+// class DiagnosticPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('ডায়াগনস্টিক')),
+//       body: Center(child: Text('Diagnostic Page')),
+//     );
+//   }
+// }
+//
+// class BloodPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('রক্ত')),
+//       body: Center(child: Text('Blood Page')),
+//     );
+//   }
+// }
+//
+// class HotelPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('হোটেল')),
+//       body: Center(child: Text('Hotel Page')),
+//     );
+//   }
+// }
+//
+// class CarRentPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('গাড়ি ভাড়া')),
+//       body: Center(child: Text('Car Rent Page')),
+//     );
+//   }
+// }
