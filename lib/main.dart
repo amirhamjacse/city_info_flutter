@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'website_page.dart';
 import 'doctor_page.dart';
 import 'hospital_page.dart';
+import 'shoping_page.dart';
+import 'courier_page.dart';
+import 'fireserivce_page.dart';
+import 'police_page.dart';
 
 
 void main() {
@@ -196,45 +200,45 @@ class ProfilePage extends StatelessWidget {
 //   }
 // }
 
-class ShoppingPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('শপিং')),
-      body: Center(child: Text('Shopping Page')),
-    );
-  }
-}
+// class ShoppingPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('শপিং')),
+//       body: Center(child: Text('Shopping Page')),
+//     );
+//   }
+// }
 
-class FireServicePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('ফায়ার সার্ভিস')),
-      body: Center(child: Text('Fire Service Page')),
-    );
-  }
-}
+// class FireServicePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('ফায়ার সার্ভিস')),
+//       body: Center(child: Text('Fire Service Page')),
+//     );
+//   }
+// }
 
-class CourierPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('কুরিয়ার সার্ভিস')),
-      body: Center(child: Text('Courier Page')),
-    );
-  }
-}
+// class CourierPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('কুরিয়ার সার্ভিস')),
+//       body: Center(child: Text('Courier Page')),
+//     );
+//   }
+// }
 
-class PolicePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('থানা-পুলিশ')),
-      body: Center(child: Text('Police Page')),
-    );
-  }
-}
+// class PolicePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('থানা-পুলিশ')),
+//       body: Center(child: Text('Police Page')),
+//     );
+//   }
+// }
 
 // class WebsitePage extends StatelessWidget {
 //   @override
