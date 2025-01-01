@@ -15,7 +15,7 @@ class ContactInfoPage extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.email, color: Colors.blue),
               title: Text('Email'),
-              subtitle: Text('developer@example.com'),
+              subtitle: Text('contact.amirhamja@gmail.com'),
               onTap: () {
                 print('Email tapped');
               },
@@ -24,7 +24,7 @@ class ContactInfoPage extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.phone, color: Colors.blue),
               title: Text('Phone'),
-              subtitle: Text('+8801234567890'),
+              subtitle: Text('+8801765223737'),
               onTap: () {
                 print('Phone tapped');
               },
@@ -33,7 +33,7 @@ class ContactInfoPage extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.location_on, color: Colors.blue),
               title: Text('Address'),
-              subtitle: Text('123 Developer Lane, Dhaka'),
+              subtitle: Text('Dhaka, Bangladesh'),
             ),
           ],
         ),
