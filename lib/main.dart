@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'website_page.dart';
+import 'doctor_page.dart';
+import 'hospital_page.dart';
+
 
 void main() {
   runApp(InformationCity());
@@ -96,7 +99,7 @@ class HomePage extends StatelessWidget {
         children: [
           // Single Image instead of Carousel
           Image.asset(
-            'assets/images/images.jpeg', // Make sure this image exists in the assets folder
+            'assets/images/images.png', // Make sure this image exists in the assets folder
             width: double.infinity,
             height: 200.0,
             fit: BoxFit.cover,
@@ -182,25 +185,16 @@ class ProfilePage extends StatelessWidget {
   }
 }
 
-class DoctorPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('ডাক্তার')),
-      body: Center(child: Text('Doctor Page')),
-    );
-  }
-}
 
-class HospitalPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('হাসপাতাল')),
-      body: Center(child: Text('Hospital Page')),
-    );
-  }
-}
+// class HospitalPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text('হাসপাতাল')),
+//       body: Center(child: Text('Hospital Page')),
+//     );
+//   }
+// }
 
 class ShoppingPage extends StatelessWidget {
   @override
